@@ -53,6 +53,37 @@
    ng-model="c"
    ng-change="get_cData()"
    />
+   <!-- C_data -->
+   <div class="container-fluid" ng-if="c_data">
+   <h1 class="text-center mt-4 text-uppercase ">{{c}} Status</h1>
+   <div class="row text-center mt-4" >
+    <div class="col-4">
+      <div class="card bg-warning text-white">
+        <div class="card-body">
+          <h3>Confirmed Cases</h3>
+          <h3>{{c_data.confirmed.value}}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card bg-success text-white">
+        <div class="card-body">
+          <h3>Recovered Cases</h3>
+          <h3>{{c_data.recovered.value}}</h3>
+        </div>
+          </div>
+    </div>
+    <div class="col-4">
+      <div class="card bg-danger text-white">
+        <div class="card-body">
+          <h3>Total Deaths</h3>
+          <h3>{{c_data.deaths.value}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- end c_data -->
   </div>
  </div>
  

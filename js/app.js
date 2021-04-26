@@ -29,6 +29,7 @@ console.log(error);
 $scope.get_cData = ()=>{
  let country=$scope.c;
  if(country== ''){
+     $scope.c_data='';
      return;
  }
  else 
